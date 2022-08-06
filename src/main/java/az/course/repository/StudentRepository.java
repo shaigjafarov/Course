@@ -13,5 +13,14 @@ public interface StudentRepository {
 
     Student getStudentById(Integer id);
 
+    boolean deleteStudentById(Integer id);
+
+    boolean insertAllStudent(List<Student> studentList);
+
+    boolean  addStudentWithProcedure(Student student);
+
+
+
+
 
 }

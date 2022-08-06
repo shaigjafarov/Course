@@ -1,6 +1,5 @@
 package az.course.model;
 
-import java.sql.Date;
 import java.time.LocalDate;
 
 public class Student {
@@ -19,6 +18,12 @@ public class Student {
                 ", yas=" + yas +
                 ", dogumTarixi=" + dogumTarixi +
                 '}';
+    }
+
+    public Student(String ad, String soyad, int yas) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.yas = yas;
     }
 
     public Student(int id, String ad, String soyad, int yas, LocalDate dogumTarixi) {

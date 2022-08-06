@@ -3,15 +3,17 @@ package az.course;
 import az.course.model.Student;
 import az.course.repository.StudentRepository;
 import az.course.repository.StudentRepositoryImpl;
-import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
 
 
     public static void main(String[] args) {
         StudentRepository st= new StudentRepositoryImpl();
-        Student studentDb = st.getStudentById(1);
-        System.out.println(studentDb);
+//        boolean b = st.insertAllStudent(List.of( new Student("qwe", "asd", 16)));
+//        boolean studentDb = st.deleteStudentById(3);
+        System.out.println(st.addStudentWithProcedure(new Student("wxvz", "aaaaa", 9)));
+
 //        studentDb.setYas(34);
 //        studentDb.setDogumTarixi(LocalDate.of(1994,12,10));
 //        boolean b = st.updateStudent(studentDb);
