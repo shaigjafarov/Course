@@ -28,7 +28,9 @@ public class FileIO {
 
 
     public void readFromFile() {
-//        String[] array = new String[100];
+//        char[] array = new char[100];
+//        byte[] array = new byte[100];
+
         try (var fw = new BufferedReader(new FileReader("output.txt"), 1)) {
 
             String line;
@@ -39,12 +41,12 @@ public class FileIO {
 
 //            System.out.println( fw.getEncoding());
 //           fw.read(array);
-//            for (String a:array
+//            for (char a:array
 //                 ) {
 //                System.out.println(a);
-//
-//            }
-        } catch (IOException e) {
+
+                   }
+         catch (IOException e) {
             e.printStackTrace();
         }
     }
